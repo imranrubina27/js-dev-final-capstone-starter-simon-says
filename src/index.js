@@ -80,7 +80,7 @@ function setLevel(level = 1) {
 
 padContainer.addEventListener("click", padHandler);
 // TODO: Add an event listener `startButtonHandler()` to startButton.
-padContainer.addEventListener("startButtonHandler", startButton);
+startButton.addEventListener("click", startButtonHandler);
 
 /**
  * EVENT HANDLERS
