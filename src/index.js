@@ -39,27 +39,9 @@ let roundCount = 0; // track the number of rounds that have been played so far
   },
   // TODO: Add the objects for the green, blue, and yellow pads. Use object for the red pad above as an example.
 ];
-const pads = [
-  {
-    color: "green",
-    selector: document.querySelector(".js-pad-green"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
-  },
-];
-const pads = [
-  {
-    color: "blue",
-    selector: document.querySelector(".js-pad-blue"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
-  },
-];
-const pads = [
-  {
-    color: "yellow",
-    selector: document.querySelector(".js-pad-yellow"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
-  },
-];
+const pads = {padColorObject1, padColorObject2, padColorObject3, padColorObject4]
+  
+
 function setLevel(level = 1) {
   // TODO: Write your code here.
   let maxRoundCount = 0;
