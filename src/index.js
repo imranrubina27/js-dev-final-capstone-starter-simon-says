@@ -192,10 +192,10 @@ function getRandomItem(collection) {
  * Sets the status text of a given HTML element with a given a message
  */
 function setText(element, text) {
-  // TODO: Write your code here.
-  let text = element.textContent;
-
-  return element;
+  // TODO: Write your code here
+  if (element) {
+    element.textContent = text;
+  }
 }
 
 /**
