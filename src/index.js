@@ -166,6 +166,7 @@ function setLevel(level = 1) {
   } else {
     return "Please enter level 1, 2, 3, or 4";
   }   
+}
 /**
  * Returns a randomly selected item from a given array.
  *
