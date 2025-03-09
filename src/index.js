@@ -155,15 +155,19 @@ function padHandler(event) {
  */
 function setLevel(level = 1) {
   // TODO: Write your code here.
-  if (!Number.isInteger(level) || !(level in levels)) {
-    return "Please enter level 1, 2, 3, or 4";
-    }
-    
-    maxRoundCount = levels[level];
-  return maxRoundCount;
+ if level === 1;
+  return 8;
+
+ if level === 2;
+  return 14;
+
+ if level === 3;
+  return 20;
+
+ if level === 4;
+  return 31;  
 
 }
-
 /**
  * Returns a randomly selected item from a given array.
  *
