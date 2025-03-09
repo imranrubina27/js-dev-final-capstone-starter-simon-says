@@ -368,6 +368,7 @@ function checkRound() {
     setText(statusSpan, "Nice! Keep going!");
     setTimeout(() => playComputerTurn(), 1000);
 }
+}
 
 /**
  * Resets the game. Called when either the player makes a mistake or wins the game.
