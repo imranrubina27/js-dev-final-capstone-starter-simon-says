@@ -104,10 +104,12 @@ function startButtonHandler() {
   startButton.classList.add("hidden");
 
 startButton.classList.remove("hidden");
+playComputerTurn();  
 
    return { startButton, statusSpan };
-   playComputerTurn();  
+    
 }
+
 
 /**
  * Called when one of the pads is clicked.
