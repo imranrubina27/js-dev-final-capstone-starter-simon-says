@@ -59,24 +59,8 @@ let roundCount = 0; // track the number of rounds that have been played so far
 ];
 
 
-function setLevel(level = 1) {
-  // TODO: Write your code here.
-  const levels = [
-    1: 8,
-    2: 14,
-    3: 20,
-    4: 31,
-  ];
 
-  if (!Number.isInteger(level) || !(level in levels)) {
-    return "Invalid level.";
-    }
-    
-    maxRoundCount = levels[level];
-  return maxRoundCount;
-}
 
-setLevel();
 
  
   
