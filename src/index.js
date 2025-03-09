@@ -57,22 +57,31 @@ let roundCount = 0; // track the number of rounds that have been played so far
     sound: new Audio("../assets/simon-says-sound-1.mp3"),
   },
 ];
-  
+
 
 function setLevel(level = 1) {
   // TODO: Write your code here.
-  let maxRoundCount = 0;
-  if (level === 1) {
-    maxRoundCount = 8;
-  } else if (level === 2) {
-    maxRoundCount = 14;
-  } else if (level === 3) {
-    maxRoundCount = 20;
-  }
-  
-  
-  
+  const levels = [
+    1: 8,
+    2: 14,
+    3: 20,
+    4: 31,
+  ];
+
+  if (!Number.isInteger(level) || !(level in levels)) {
+    return "Invalid level.";
+    }
+    
+    maxRoundCount = levels[level];
+  return maxRoundCount;
 }
+
+setLevel();
+
+ 
+  
+  
+
 /**
  * EVENT LISTENERS
  */
@@ -80,6 +89,9 @@ function setLevel(level = 1) {
 padContainer.addEventListener("click", padHandler);
 // TODO: Add an event listener `startButtonHandler()` to startButton.
 startButton.addEventListener("click", startButtonHandler);
+startButton.classList.add("hidden");
+
+startButton.classList.remove("hidden");
 
 /**
  * EVENT HANDLERS
@@ -159,6 +171,13 @@ function padHandler(event) {
  */
 function setLevel(level = 1) {
   // TODO: Write your code here.
+  if (!Number.isInteger(level) || !(level in levels)) {
+    return "Please enter level 1, 2, 3, or 4";
+    }
+    
+    maxRoundCount = levels[level];
+  return maxRoundCount;
+
 }
 
 /**
