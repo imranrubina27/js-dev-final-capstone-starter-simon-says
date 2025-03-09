@@ -281,11 +281,10 @@ function activatePads(sequence) {
   setText(statusSpan, "The computer's turn...");
   setText(heading, `Round ${roundCount} of ${maxRoundCount}`);
 
-  computerSequence.push(getRandomItem(colors));
+  computerSequence.push(getRandomItem);
 
   setTimeout(() => playHumanTurn(roundCount), roundCount * 600 + 1000); // 5
 }
-
 /**
  * Allows the player to play their turn.
  *
