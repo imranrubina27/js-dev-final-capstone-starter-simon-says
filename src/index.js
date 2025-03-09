@@ -96,11 +96,17 @@ startButton.classList.remove("hidden");
  *
  */
 function startButtonHandler() {
+
   // TODO: Write your code here.
   setLevel();
   roundCount = 1; 
 
+  startButton.classList.add("hidden");
+
+startButton.classList.remove("hidden");
+
    return { startButton, statusSpan };
+   playComputerTurn();  
 }
 
 /**
